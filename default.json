@@ -1,11 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "donvargax's defaults for every repository: a weekly window, a week's wait on every release, the lockfile refreshed, and every update landed once CI is green",
+  "description": "donvargax's defaults for every repository: a weekly window, a week's wait on every release, the lockfile refreshed, and every update landed once CI is green, and a Dependency Dashboard issue saying what is pending and why",
   "extends": ["config:recommended", "customManagers:githubActionsVersions"],
   "timezone": "Etc/UTC",
   "schedule": ["* 0-5 * * 1"],
   "automerge": true,
-  "dependencyDashboard": false,
+  "dependencyDashboard": true,
   "minimumReleaseAge": "7 days",
   "minimumReleaseAgeBehaviour": "timestamp-optional",
   "lockFileMaintenance": {
