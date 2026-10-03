@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "donvargax's defaults for every repository: a weekly window, a week's wait on every release, the lockfile refreshed, and every update landed once CI is green",
+  "extends": ["config:recommended", "customManagers:githubActionsVersions"],
+  "timezone": "Etc/UTC",
+  "schedule": ["* 0-5 * * 1"],
+  "automerge": true,
+  "dependencyDashboard": false,
+  "minimumReleaseAge": "7 days",
+  "minimumReleaseAgeBehaviour": "timestamp-optional",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["* 0-5 * * 1"]
+  },
+  "packageRules": [
+    {
+      "description": "My own releases, these presets among them, are taken at once",
+      "matchPackageNames": ["donvargax/**"],
+      "minimumReleaseAge": "0"
+    }
+  ]
+}

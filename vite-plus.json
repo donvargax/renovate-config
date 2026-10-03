@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Node projects whose runtime is in .node-version: the runtime and its types move as one update, never past the major this release allows",
+  "packageRules": [
+    {
+      "description": "Raising the cap is a major release of these presets, which Renovate then rolls out to every repository",
+      "matchDepNames": ["node", "@types/node"],
+      "groupName": "node",
+      "groupSlug": "node",
+      "allowedVersions": "<=24"
+    }
+  ]
+}
