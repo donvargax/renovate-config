@@ -1,0 +1,5 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Go modules: go.mod and go.sum tidied after every update, and a module's import paths moved with its major version",
+  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
+}

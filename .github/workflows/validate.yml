@@ -25,4 +25,4 @@ jobs:
       # --strict also fails on a config Renovate would migrate.
       - run: >-
           npx --yes --package "renovate@$RENOVATE_VERSION" --
-          renovate-config-validator --strict default.json vite-plus.json renovate.json
+          renovate-config-validator --strict default.json vite-plus.json go.json renovate.json
